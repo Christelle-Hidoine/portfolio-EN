@@ -5,7 +5,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Christelle Hidoine" description="About Christelle Hidoine">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -15,44 +15,100 @@ import Hero from '../components/Hero.astro';
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/assets/carte.png"
+					alt="Christelle with her dog, background blue sky, yoga, globe, dog paw and tree leaf stickers"
 				/>
 			</Hero>
 
 			<section>
-				<h2 class="section-title">Background</h2>
+				<h2 class="section-title">Parcours</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						Versatile and ambitious, I have acquired relational and organizational skills through my various professional experiences in France and abroad. Having lived 8 years in Central America in 3 different countries, my ability to adapt and my autonomy have been reinforced by the need to integrate quickly into the job market.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						I'm now a web developer.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						This vocation came during my travels during which I was able to observe the shortage of quality websites and my irrepressible desire to remedy it. 
+					</p>
+					<p>
+						I will know how to implement my skills and my motivation in the service of an innovative company that cares about its environmental impact🌲.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<span>
+						<p class="content-title">Web developer PHP training</p>
+					</span>
+					<em>(WEB AND MOBILE WEB DEVELOPER)</em>
+					<p>O'Clock School telepresential (2023)</p>
+				</div>
+				<div class="content">
+					<span>
+						<p class="content-title">DAEFLE</p>
+					</span>
+					<em>Diploma in teaching French as a foreign language</em>
+					<p>CNED (2016-2017)</p>
+				</div>
+				<div class="content">
+					<span>
+						<p class="content-title">BTEC Higher National Diploma in sales</p>
+					</span>
+					<em>Operational sales management (OSM)</em>
+					<p>La Plaine de Neauphle - Trappes, 78 (2001-2003)</p>
+				</div>
+				<div class="content">
+					<span>
+						<p class="content-title">General Certificate of Education Advanced Level in Tertiary Sciences and Technologies</p>
+					</span>
+					<p>Lycée Jean Vilar - Plaisir, 78 (2001)</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<span class="content-title">Development of web applications based on MVC architecture with responsive design</span>
+					<ul>
+						<li>Learn, manipulate and practice programming languages: HTLM, CSS, PHP, SQL, JAVASCRIPT</li>
+						<li>Discover and use the backend frameworks associated with these languages: Symfony, Laravel and the frontend frameworks: BootStrap.</li>
+						<li>Use and creation of a REST API, concept of asynchronicity and use of the Eloquent ORM with Laravel, and the Doctrine ORM with Symfony.</li>
+						<li>Using a CMS and creating a theme with WordPress</li>
+						<li>Create, use and manage databases with MySQL, MariaDB, and conceptual data modeling with Mocodo.</li>
+						<li>Application of website security recommendations (knowledge of possible attacks: DDOS, CSRF, XSS... and methods for countering them)</li>
+						<li>Local server installation and deployment of a website</li>
+						<li>Daily use of Linux, Git, GitHub</li>
+						<li>Understanding and applying SEO</li>
+						<li>Project management with the SCRUM Agile method</li>
+					</ul>	
+				</div>
+				<div class="content">
+					<span class="content-title">Sales administration</span>
+					<em>Automotive and Industry</em>
+					<p>Delivery tracking, invoicing, complaints handling
+						Website development and promotion</p>
+				</div>
+				<div class="content">
+					<span class="content-title">Teaching</span>
+					<em>Linguistics area</em>
+					<p>Define teaching objectives, prepare lessons, monitor progress</p>
+				</div>
+				<div class="content">
+					<span class="content-title">Logistics</span>
+					<em>Transport Area</em>
+					<p>Management of service providers, quality meetings, OPEX control</p>
+				</div>
+				<div class="content">
+					<span class="content-title">Management</span>
+					<em>Construction and Building Sector</em>
+					<p>Process creation, employee development, planning management</p>
+				</div>
+				<div class="content">
+					<span class="content-title">Customer relations</span>
+					<em>Construction and Building Sector</em>
+					<p>Telesales, consulting, customer portfolio management, loyalty building</p>
 				</div>
 			</section>
 		</main>
@@ -89,6 +145,9 @@ import Hero from '../components/Hero.astro';
 
 	.content {
 		grid-column: 2 / 4;
+	}
+	.content-title {
+		font-weight: 800;
 	}
 
 	.content :global(a) {

@@ -30,22 +30,22 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Christelle Hidoine"
+					tagline="I am a Developer who is currently based in Zürich, Switzerland."
 					align="start"
 				>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="tree" size="1.33em" /> Environmentally aware</Pill>
+						<Pill><Icon icon="globe" size="1.33em" /> A passion for culture</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Christelle Hidoine smiling in a green pullover"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/portrait.png"
 				/>
 			</header>
 
@@ -56,7 +56,7 @@ const projects = (await getCollection('work'))
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<p>Take a look below at some of my featured work during my training this year.</p>
 				</header>
 
 				<div class="gallery">
@@ -73,7 +73,7 @@ const projects = (await getCollection('work'))
 
 				<div class="cta">
 					<CallToAction href="/work/">
-						View All
+						View All Work
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
@@ -83,15 +83,14 @@ const projects = (await getCollection('work'))
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Mentions</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						I've had very good feedback from my tutor and teachers during my training. Below are a few comments left by my referees.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['"Very good courses overall, with neat code and generally with bonuses, it\'s nickel! 🎩 "', '"You\'re very involved in helping other students, and you\'ve even offered to be a student course corrector. We\'d like to thank you for that, because it\'s a win/win situation in terms of exchanges and learning! ➕"', '"You\'ve demonstrated strong web development skills and an approach to code: in our opinion, React and Symfony are specializations that will suit you perfectly, so it\'s up to you to make your choice."', '"You excelled and were in good spirits the whole time. You don\'t hesitate to help others and that\'s really great for others and yourself."', '"Your future employer will be lucky to have you on his team!"'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -115,7 +114,10 @@ const projects = (await getCollection('work'))
 	}
 
 	.roles {
-		display: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 0.5rem;
+		gap: 0.5rem;
 	}
 
 	.hero img {
@@ -126,7 +128,7 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-md);
 	}
 
-	@media (min-width: 50em) {
+	@media (min-width: 60em) {
 		.hero {
 			display: grid;
 			grid-template-columns: 6fr 4fr;
@@ -230,10 +232,12 @@ const projects = (await getCollection('work'))
 
 	.mention-card {
 		display: flex;
-		height: 7rem;
+		height: 10rem;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		font-style: italic;
+		font-size: 0.8rem;
 		border: 1px solid var(--gray-800);
 		border-radius: 1.5rem;
 		color: var(--gray-300);
@@ -245,6 +249,7 @@ const projects = (await getCollection('work'))
 		.mention-card {
 			border-radius: 1.5rem;
 			height: 9.5rem;
+			font-size: 1rem;
 		}
 	}
 </style>
