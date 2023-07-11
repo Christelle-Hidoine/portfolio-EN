@@ -38,18 +38,18 @@ const iconLinks: { label: string; href: string; target: string; icon: IconProps[
 				textLinks.map(({ label, href }) => (
 					<li>
 						<a
-							aria-current={Astro.url.pathname === href}
-							class:list={[
-								'link',
-								{
-									active:
-										Astro.url.pathname === href ||
-										(href !== '/' && Astro.url.pathname.startsWith(href)),
-								},
-							]}
-							href={href}
+						aria-current={Astro.url.pathname === href}
+						class:list={[
+							'link',
+							{
+								active:
+								Astro.url.pathname === href ||
+								(href !== '/' && Astro.url.pathname.startsWith(href)),
+							},
+						]}
+						href={href}
 						>
-							{label}
+						{label}
 						</a>
 					</li>
 				))
@@ -65,8 +65,12 @@ const iconLinks: { label: string; href: string; target: string; icon: IconProps[
 						</a>
 					))
 				}
+				<div class="switch-language">
+					<a class="social" href="https://christelle-hidoine.surge.sh/" title="Site en français">FR</a>
+				</div>
 			</div>
-
+			
+			
 			<div class="theme-toggle">
 				<ThemeToggle />
 			</div>
@@ -231,6 +235,10 @@ const iconLinks: { label: string; href: string; target: string; icon: IconProps[
 		display: flex;
 		align-items: center;
 		height: calc(var(--icon-size) + 2 * var(--icon-padding));
+	}
+
+	.switch-language {
+		font-size: var(--text-md);
 	}
 
 	@media (min-width: 50em) {
