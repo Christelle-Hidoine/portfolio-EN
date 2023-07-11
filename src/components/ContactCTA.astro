@@ -4,10 +4,14 @@ import Icon from './Icon.astro';
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
-		Send Me a Message
+	<h2>Want to work with me ?</h2>
+	<CallToAction href="mailto:christelle.hidoine@gmail.com">
+		Send me an email
 		<Icon icon="paper-plane-tilt" size="1.2em" />
+	</CallToAction>
+	<CallToAction href="/assets/resume-christelle-hidoine.pdf" download="resume-christelle-hidoine.pdf" >
+		Download my Resume
+		<Icon icon="download" size="1.2em" />
 	</CallToAction>
 </aside>
 
@@ -30,7 +34,7 @@ import Icon from './Icon.astro';
 		max-width: 15ch;
 	}
 
-	@media (min-width: 50em) {
+	@media (min-width: 96em) {
 		aside {
 			padding: 7.5rem;
 			flex-direction: row;
